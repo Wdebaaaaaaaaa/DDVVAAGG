@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kreditberatung – DVAG</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; margin: 0; }
+    .hero { background: #1a1a1a; color: white; text-align: center; padding: 60px 20px; }
+    .form-section { background: white; max-width: 600px; margin: 40px auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    form label { display: block; margin-top: 15px; font-weight: bold; }
+    form input { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    form input[type="submit"] { background: #d10000; color: white; border: none; margin-top: 20px; cursor: pointer; font-size: 1em; }
+    .checkbox { margin-top: 20px; font-size: 0.9em; }
+    .footer { text-align: center; font-size: 0.9em; padding: 20px; color: #777; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Dein Wunschkredit – einfach & schnell</h1>
+    <p>In nur 1 Minute zur kostenlosen Kreditberatung</p>
+  </div>
+
+  <div class="form-section">
+    <h2>Jetzt unverbindlich anfragen</h2>
+    <form action="https://formspree.io/f/xpwryvgn" method="POST">
+      <label for="vorname">Vorname</label>
+      <input type="text" id="vorname" name="Vorname" required>
+
+      <label for="nachname">Nachname</label>
+      <input type="text" id="nachname" name="Nachname" required>
+
+      <label for="email">E-Mail-Adresse</label>
+      <input type="email" id="email" name="E-Mail" required>
+
+      <label for="telefon">Telefonnummer</label>
+      <input type="tel" id="telefon" name="Telefon" required>
+
+      <label for="kreditsumme">Gewünschte Kreditsumme (€)</label>
+      <input type="number" id="kreditsumme" name="Kreditsumme" required>
+
+      <label for="nettoeinkommen">Monatliches Nettoeinkommen (€)</label>
+      <input type="number" id="nettoeinkommen" name="Nettoeinkommen" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="datenschutz" required>
+        <label for="datenschutz">Ich akzeptiere die <a href="#">Datenschutzerklärung</a>.</label>
+      </div>
+
+      <input type="submit" value="Jetzt anfragen">
+    </form>
+  </div>
+
+  <div class="footer">
+    © 2025 Dein DVAG-Berater – Alle Rechte vorbehalten
+  </div>
+
+</body>
+</html>
